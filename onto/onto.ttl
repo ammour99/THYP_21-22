@@ -1,33 +1,62 @@
-{
-    "o:label": "metadata ressource",
-    "o:resource_template_property": [
-        {
-            "o:alternate_label": "metadata ressource",
-            "o:alternate_comment": null,
-            "o:is_required": false,
-            "o:is_private": false,
-            "data_types": [],
-            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
-            "vocabulary_label": "Dublin Core",
-            "local_name": "title",
-            "label": "Title"
-        },
-        {
-            "o:alternate_label": null,
-            "o:alternate_comment": null,
-            "o:is_required": false,
-            "o:is_private": false,
-            "data_types": [],
-            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
-            "vocabulary_label": "Dublin Core",
-            "local_name": "description",
-            "label": "Description"
-        }
-    ],
-    "o:resource_class": {
-        "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/dcmitype\/",
-        "vocabulary_label": "Dublin Core Type",
-        "local_name": "Dataset",
-        "label": "Dataset"
-    }
-}
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix o: <http://omeka.org/s/vocabs/o#> .
+@prefix ma: <http://www.w3.org/ns/ma-ont#>.
+@prefix mo: <http://purl.org/ontology/mo#>.
+@prefix SDS: <https://github.com/ammour99/THYP_21-22/tree/master/onto#> .
+
+<https://github.com/ammour99/THYP_21-22/tree/master/onto#> a owl:Ontology ;
+    dcterms:title "SALLE DE SPORT" .
+
+SDS:Moniteur a rdfs:Class ;
+    rdfs:label "Moniteur" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+SDS:Activite a rdfs:Class ;
+    rdfs:label "Activite" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+SDS:Seance a rdfs:Class ;
+    rdfs:label "Seance" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+
+
+
+
+SDS:Nom a rdf:Property ;
+    rdfs:label "Nom" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+SDS:Login a rdf:Property ;
+    rdfs:label "Login" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+SDS:Date_seance a rdf:Property ;
+    rdfs:label "Date_seance" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+SDS:LibelleActivite a rdf:Property ;
+    rdfs:label "LibelleActivite" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+SDS:Mdp a rdf:Property ;
+    rdfs:label "Mdp" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+SDS:Adherant a rdf:Property ;
+    rdfs:label "Adherant" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+    
